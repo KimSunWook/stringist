@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stringist Sample</title>
+  </head>
+  <body>
+    <h1>
+      Hello. I am Stringist.<br/>
+      Please check console.<br/>
+      You can see beautiful json.<br/>
+    </h1>
+  </body>
+  <script type="text/javascript" src="./stringist.js"></script>
+  <script type="text/javascript">
+    var json = {
+      "glossary": {
+        "title": "example glossary",
+    		"GlossDiv": {
+          "title": "S",
+          "is_boolean1": true,
+          "is_boolean2": false,
+          "abc": undefined,
+          "def": null,
+          "count": 10,
+    			"GlossList": {
+              "GlossEntry": {
+                "ID": "SGML",
+      					"SortAs": "SGML",
+      					"GlossTerm": "Standard Generalized Markup Language",
+      					"Acronym": "SGML",
+      					"Abbrev": "ISO 8879:1986",
+                "count": 300,
+      					"GlossDef": {
+                  "para": "A meta-markup language, used to create markup languages such as DocBook.",
+      						"GlossSeeAlso": ["GML", "XML"],
+                  "count": 5000
+                },
+    					"GlossSee": "markup"
+            }
+          }
+        }
+      }
+    }
+    stringist(json);
+  </script>
+</html>
