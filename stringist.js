@@ -5,11 +5,11 @@ function stringist(json) {
 
   var
     arr = [],
-    _string = 'color:green',
-    _number = 'color:darkorange',
-    _boolean = 'color:deepskyblue',
-    _null = 'color:magenta',
-    _key = 'color:red';
+    _key = 'color:#FC5572', // Red
+    _string = 'color:#A33AF6', // Purple
+    _number = 'color:#FFAC1F', // Yellow
+    _boolean = 'color:#1D68FF', // Blue
+    _null = 'color:#44AE11'; // Green
 
   json = json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
     var style = _number;
