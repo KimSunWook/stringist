@@ -1,4 +1,4 @@
-function JSONstringify(json) {
+function stringist(json) {
   if (typeof json != 'string') {
     json = JSON.stringify(json, undefined, '\t');
   }
@@ -7,7 +7,7 @@ function JSONstringify(json) {
     arr = [],
     _string = 'color:green',
     _number = 'color:darkorange',
-    _boolean = 'color:blue',
+    _boolean = 'color:deepskyblue',
     _null = 'color:magenta',
     _key = 'color:red';
 
