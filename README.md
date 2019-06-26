@@ -61,4 +61,5 @@
 
 ## Todo
 
-  
+  - Color customization function
+  - Regular expression customization function
