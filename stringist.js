@@ -33,3 +33,5 @@ function stringist(json) {
 
   console.log.apply(console, arr);
 }
+
+window.stringist = stringist;
